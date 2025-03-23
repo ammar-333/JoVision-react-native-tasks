@@ -16,23 +16,25 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import MyClassPage from '../components/MyClassPage';
+import MyFunctionPage from '../components/MyFunctionPage';
 
-const MyFunctionPage = props => {
-  useEffect(() => {
-    console.log('myFunctionPage loaded');
-
-    return () => {
-      console.log('myFunctionPage unloaded');
-    };
-  }, []);
+const Task23 = () => {
+  const [text, setText] = useState(' ');
 
   return (
-    <View>
-      <Text style={styles.text}>Text</Text>
+    <View style={styles.container}>
+      <TextInput
+        style={styles.input}
+        placeholder="type something..."
+        onChangeText={setText}
+        value={text}
+      />
+      <MyFunctionPage />
     </View>
   );
 };
-export default MyFunctionPage;
+export default Task23;
 
 const styles = StyleSheet.create({
   container: {
