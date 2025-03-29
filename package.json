@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "react": "19.0.0",
-    "react-native": "0.78.0"
+    "react-native": "0.78.0",
+    "react-native-video": "^6.11.0",
+    "expo": "^52.0.0",
+    "expo-av": "~15.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

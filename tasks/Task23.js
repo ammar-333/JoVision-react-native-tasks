@@ -16,14 +16,14 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import MyClassPage from '../components/MyClassPage';
+import MyClassPage_Task23 from '../components/MyClassPage_Task23';
 
 const Task23 = () => {
   const [text, setText] = useState(' ');
 
   return (
     <View style={styles.container}>
-      <MyClassPage updateText={setText} />
+      <MyClassPage_Task23 updateText={setText} />
       <Text style={styles.text}>{text}</Text>
     </View>
   );

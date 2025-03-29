@@ -15,7 +15,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import MyClassPage from '../components/MyClassPage';
+import MyClassPage_Task20 from '../components/MyClassPage_Task20';
 
 const Task20 = () => {
   const [isVisible, setVisible] = useState(false);
@@ -30,7 +30,7 @@ const Task20 = () => {
   return (
     <View style={styles.container}>
       <Button title={buttonTitle} onPress={fun} />
-      {isVisible && <MyClassPage />}
+      {isVisible && <MyClassPage_Task20 />}
     </View>
   );
 };

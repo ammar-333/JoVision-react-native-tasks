@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {
   ScrollView,
   StatusBar,
@@ -16,10 +16,9 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import MyClassPage from '../components/MyClassPage';
-import MyFunctionPage from '../components/MyFunctionPage';
+import MyFunctionPage_Task24 from '../components/MyFunctionPage_Task24';
 
-const Task23 = () => {
+const Task24 = () => {
   const [text, setText] = useState(' ');
 
   return (
@@ -30,11 +29,11 @@ const Task23 = () => {
         onChangeText={setText}
         value={text}
       />
-      <MyFunctionPage />
+      <MyFunctionPage_Task24 text={text} />
     </View>
   );
 };
-export default Task23;
+export default Task24;
 
 const styles = StyleSheet.create({
   container: {

@@ -15,7 +15,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import MyFunctionPage from '../components/MyFunctionPage';
+import MyFunctionPage_Task21 from '../components/MyFunctionPage_Task21';
 
 const Task21 = () => {
   const [isVisible, setVisible] = useState(false);
@@ -30,7 +30,7 @@ const Task21 = () => {
   return (
     <View style={styles.container}>
       <Button title={buttonTitle} onPress={fun} />
-      {isVisible && <MyFunctionPage />}
+      {isVisible && <MyFunctionPage_Task21 />}
     </View>
   );
 };

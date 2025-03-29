@@ -16,14 +16,14 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import MyFunctionPage from '../components/MyFunctionPage';
+import MyFunctionPage_Task22 from '../components/MyFunctionPage_Task22';
 
 const Task22 = () => {
   const [text, setText] = useState(' ');
 
   return (
     <View style={styles.container}>
-      <MyFunctionPage updateText={setText} />
+      <MyFunctionPage_Task22 updateText={setText} />
       <Text style={styles.text}>{text}</Text>
     </View>
   );
